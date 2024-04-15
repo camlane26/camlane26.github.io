@@ -27,15 +27,28 @@ body, html {
   width: 100%;
   text-align: center;
   font-size: 5vw; /* Scaling font size */
-  color: #FF10F0; /* Choose color that contrasts well with your background */
+  color: #FF10F0; /* Pink color */
   padding: 20px 0; /* Add some padding */
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; /* Comic Sans font */
+  font-weight: bold;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 3vw; /* Scaling font size */
+  color: #FF10F0; /* Pink color */
+  padding: 20px 0; /* Add some padding */
+  font-family: "Comic Sans MS", "Comic Sans", cursive; /* Comic Sans font */
   font-weight: bold;
 }
 
 /* Ensure the font size is not too small on smaller screens */
 @media (max-width: 600px) {
-  .header-text {
+  .header-text,
+  .footer-text {
     font-size: 10vw; /* Smaller screens will have larger text relative to the screen size */
   }
 }
@@ -45,6 +58,7 @@ body, html {
 
 <div class="bg-image"></div>
 <div class="header-text">Mullet Coin</div> <!-- Your header text here -->
+<div class="footer-text">Business at the Front, Party at the Back</div> <!-- Your footer text here -->
 
 </body>
 </html>
