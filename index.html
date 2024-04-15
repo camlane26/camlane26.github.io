@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mullet Coin</title>
+<title>Mullet Coin</title>
 <style>
 body, html {
   height: 100%;
@@ -20,12 +20,30 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 5vw; /* Scaling font size */
+  color: pink; /* Choose color that contrasts well with your background */
+  padding: 20px 0; /* Add some padding */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Ensure the font size is not too small on smaller screens */
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 10vw; /* Smaller screens will have larger text relative to the screen size */
+  }
+}
 </style>
 </head>
 <body>
 
-<!-- The "bg-image" class div includes the background image -->
 <div class="bg-image"></div>
+<div class="header-text">Mullet Coin</div> <!-- Your header text here -->
 
 </body>
 </html>
